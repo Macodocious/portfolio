@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss tailwind.css -o output.css",
-    "dev": "postcss tailwind.css -o output.css --watch & live-server --open=./index.html --watch=output.css"
+    "build": "postcss tailwind.css -o output.css"
   },
   "repository": {
     "type": "git",
@@ -19,8 +18,8 @@
   },
   "homepage": "https://github.com/Macodocious/portfolio#readme",
   "dependencies": {
-    "live-server": "^1.2.2",
     "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "vue": "^3.4.27"
   },
   "devDependencies": {
