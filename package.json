@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Brian Mac's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macodocious/portfolio.git"
+  },
+  "author": "Brian Mac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macodocious/portfolio/issues"
+  },
+  "homepage": "https://github.com/Macodocious/portfolio#readme"
+}
