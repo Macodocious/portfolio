@@ -1,2 +1,2 @@
-# portfolio
+# Portfolio
 Brian Mac's Portfolio
