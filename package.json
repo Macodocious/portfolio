@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Macodocious/portfolio/issues"
   },
-  "homepage": "https://github.com/Macodocious/portfolio#readme"
+  "homepage": "https://github.com/Macodocious/portfolio#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "vue": "^3.4.27"
+  }
 }
