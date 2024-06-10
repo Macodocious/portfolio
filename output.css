@@ -508,6 +508,9 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.inline-flex{
+  display: inline-flex;
+}
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
