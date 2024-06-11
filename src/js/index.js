@@ -1,4 +1,6 @@
-// For security measures
+import './navigation.js';
+
+// Add security to external links
 
 document.addEventListener('DOMContentLoaded', function() {
     var links = document.querySelectorAll('a');

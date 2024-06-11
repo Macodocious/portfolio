@@ -1,3 +1,7 @@
 body {
     letter-spacing: -0.03125rem;
+    min-height: 100%;
+    margin: 0;
+    color: #181717;
+    background-color: #ffffff;
 }
