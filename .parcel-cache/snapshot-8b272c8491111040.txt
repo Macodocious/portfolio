@@ -900,7 +900,7 @@
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/src/index.js1718062059687643937 0
 76/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js.map1718062059717643933 0
 74/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js.map1718062059727643933 0
-44/home/macodocious/repos/portfolio/index.html1718073353153725036 0
+44/home/macodocious/repos/portfolio/index.html1718074397023576014 0
 72/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js1718062059647643943 0
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js1718062059687643937 0
 87/home/macodocious/repos/portfolio/node_modules/react-dom/cjs/react-dom.profiling.min.js1718058580937953622 0
@@ -4381,7 +4381,7 @@
 66/home/macodocious/repos/portfolio/node_modules/@vue/shared/LICENSE1718004939328508756 0
 90/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/features/accelerometer.js1718054683378055148 0
 81/home/macodocious/repos/portfolio/node_modules/@parcel/core/src/PackagerRunner.js1718062059787643923 0
-42/home/macodocious/repos/portfolio/index.js1718073358663724251 0
+42/home/macodocious/repos/portfolio/index.js1718074447333568983 0
 62/home/macodocious/repos/portfolio/node_modules/yargs/README.md1718055110238081720 0
 61/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib1718062059727643933 1
 70/home/macodocious/repos/portfolio/node_modules/domutils/lib/index.d.ts1718061495307723240 0

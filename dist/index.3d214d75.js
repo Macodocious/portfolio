@@ -2945,8 +2945,7 @@ process.umask = function() {
 };
 
 },{}],"bB7Pu":[function(require,module,exports) {
-var _tailwindCss = require("tailwindcss/tailwind.css");
 
-},{"tailwindcss/tailwind.css":"37WAp"}],"37WAp":[function() {},{}]},["km5uZ","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire2041")
+},{}]},["km5uZ","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire2041")
 
 //# sourceMappingURL=index.3d214d75.js.map

@@ -900,7 +900,7 @@
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/src/index.js1718062059687643937 0
 76/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js.map1718062059717643933 0
 74/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js.map1718062059727643933 0
-44/home/macodocious/repos/portfolio/index.html1718073353153725036 0
+44/home/macodocious/repos/portfolio/index.html1718074397023576014 0
 72/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js1718062059647643943 0
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js1718062059687643937 0
 87/home/macodocious/repos/portfolio/node_modules/react-dom/cjs/react-dom.profiling.min.js1718058580937953622 0
