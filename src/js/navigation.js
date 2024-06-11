@@ -6,7 +6,7 @@ export function navContainer(parentElement, links) {
     links.forEach(linkInfo => {
         let link = document.createElement("a");
         link.href = linkInfo.url;
-        link.classList.add("flex", "gap-2");
+        link.classList.add("flex","items-center" ,"gap-2");
         let linkText = document.createElement("p");
         linkText.textContent = linkInfo.text;
 
@@ -16,7 +16,15 @@ export function navContainer(parentElement, links) {
             });
         }
 
-        link.appendChild(linkText);
+        if (linkInfo.text === "LinkedIn") {
+            let arrowIcon = document.createElement("i");
+            arrowIcon.classList.add("ph", "ph-arrow-up-right")
+            link.appendChild(linkText);
+            link.appendChild(arrowIcon);
+        } else {
+            link.appendChild(linkText);
+        }
+
         container.appendChild(link);
     });
 
@@ -26,7 +34,7 @@ export function navContainer(parentElement, links) {
 const parentElement = document.getElementById("nav");
 
 const linksForContainer1 = [
-    {url: "#", text: "Brian Mac", class: "text-lg font-semibold"}
+    {url: "#", text: "Brian Mac", class: "text-xl font-semibold"}
 ];
 const linksForContainer2 = [
     {url: "#", text: "Tooni"},
