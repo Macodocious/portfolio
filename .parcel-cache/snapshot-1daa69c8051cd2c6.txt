@@ -4441,7 +4441,7 @@
 105/home/macodocious/repos/portfolio/node_modules/@parcel/optimizer-svgo/node_modules/commander/package.json1718061497587722902 0
 81/home/macodocious/repos/portfolio/node_modules/css-tree/lib/syntax/node/Number.js1718061495807723166 0
 74/home/macodocious/repos/portfolio/node_modules/yaml/dist/doc/Document.d.ts1718054683378055148 0
-46/home/macodocious/repos/portfolio/package.json1718071564043980600 0
+46/home/macodocious/repos/portfolio/package.json1718076152807705814 0
 52/home/macodocious/repos/portfolio/tailwind.config.js1718075889873425515 0
 79/home/macodocious/repos/portfolio/node_modules/css-what/lib/commonjs/index.d.ts1718061495317723240 0
 78/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/regions/TC.js1718054683568055160 0
