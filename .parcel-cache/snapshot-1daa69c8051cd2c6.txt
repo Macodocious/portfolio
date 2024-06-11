@@ -1,12 +1,17 @@
-8852
+8862
 43/home/macodocious/repos/portfolio/README.md1718004989028665017 0
-49/home/macodocious/repos/portfolio/dist/index.html1718071873963936512 0
-61/home/macodocious/repos/portfolio/dist/index.e1b8c111.css.map1718071373244006497 0
+57/home/macodocious/repos/portfolio/dist/index.c41b5a0e.css1718073359013724198 0
+60/home/macodocious/repos/portfolio/dist/index.3d214d75.js.map1718073359013724198 0
+49/home/macodocious/repos/portfolio/dist/index.html1718073366333723167 0
+61/home/macodocious/repos/portfolio/dist/index.e1b8c111.css.map1718073359013724198 0
 60/home/macodocious/repos/portfolio/dist/portfolio.3464ddca.js1718071373234006501 0
+61/home/macodocious/repos/portfolio/dist/index.106ec773.css.map1718073366333723167 0
+61/home/macodocious/repos/portfolio/dist/index.c41b5a0e.css.map1718073359013724198 0
 57/home/macodocious/repos/portfolio/dist/index.5b8185d3.css1718069130034326409 0
 61/home/macodocious/repos/portfolio/dist/index.192f8135.css.map1718071568763979921 0
 57/home/macodocious/repos/portfolio/dist/index.10324eec.css1718071568763979921 0
-57/home/macodocious/repos/portfolio/dist/index.e1b8c111.css1718071373244006497 0
+60/home/macodocious/repos/portfolio/dist/index.2d339625.js.map1718073366333723167 0
+57/home/macodocious/repos/portfolio/dist/index.e1b8c111.css1718073359013724198 0
 57/home/macodocious/repos/portfolio/dist/index.192f8135.css1718071568763979921 0
 46/home/macodocious/repos/portfolio/tailwind.css1718056454368040942 0
 53/home/macodocious/repos/portfolio/pages/homepage.html1718070543794125659 0
@@ -895,7 +900,7 @@
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/src/index.js1718062059687643937 0
 76/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js.map1718062059717643933 0
 74/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js.map1718062059727643933 0
-44/home/macodocious/repos/portfolio/index.html1718071867933937265 0
+44/home/macodocious/repos/portfolio/index.html1718073353153725036 0
 72/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/browser.js1718062059647643943 0
 70/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib/index.js1718062059687643937 0
 87/home/macodocious/repos/portfolio/node_modules/react-dom/cjs/react-dom.profiling.min.js1718058580937953622 0
@@ -1542,6 +1547,7 @@
 79/home/macodocious/repos/portfolio/node_modules/@parcel/utils/src/escape-html.js1718062059707643935 0
 78/home/macodocious/repos/portfolio/node_modules/estree-walker/types/walker.d.ts1718004939108508054 0
 76/home/macodocious/repos/portfolio/node_modules/@parcel/utils/src/Deferred.js1718062059707643935 0
+56/home/macodocious/repos/portfolio/dist/index.3d214d75.js1718073359013724198 0
 77/home/macodocious/repos/portfolio/node_modules/@parcel/utils/src/TapStream.js1718062059777643925 0
 81/home/macodocious/repos/portfolio/node_modules/yaml/dist/parse/cst-stringify.d.ts1718054683378055148 0
 78/home/macodocious/repos/portfolio/node_modules/@parcel/utils/src/getRootDir.js1718062059717643933 0
@@ -2703,7 +2709,6 @@
 109/home/macodocious/repos/portfolio/node_modules/csso/node_modules/css-tree/cjs/definition-syntax/tokenizer.cjs1718061497297722945 0
 111/home/macodocious/repos/portfolio/node_modules/sucrase/dist/types/transformers/NumericSeparatorTransformer.d.ts1718054683378055148 0
 80/home/macodocious/repos/portfolio/node_modules/tailwindcss/src/util/parseGlob.js1718054683438055153 0
-52/home/macodocious/repos/portfolio/postcss.config.cjs1718068605364401012 0
 99/home/macodocious/repos/portfolio/node_modules/sucrase/dist/types/transformers/RootTransformer.d.ts1718054683388055148 0
 99/home/macodocious/repos/portfolio/node_modules/@parcel/runtime-js/lib/helpers/worker/wasm-loader.js1718062059737643931 0
 77/home/macodocious/repos/portfolio/node_modules/fs-extra/lib/copy/copy-sync.js1718055110268081723 0
@@ -3107,7 +3112,7 @@
 102/home/macodocious/repos/portfolio/node_modules/postcss-load-config/node_modules/lilconfig/package.json1718054683108055132 0
 85/home/macodocious/repos/portfolio/node_modules/foreground-child/dist/mjs/package.json1718054683148055134 0
 97/home/macodocious/repos/portfolio/node_modules/sucrase/dist/transformers/TypeScriptTransformer.js1718054683348055146 0
-38/home/macodocious/repos/portfolio/dist1718071873963936512 1
+38/home/macodocious/repos/portfolio/dist1718073366333723167 1
 89/home/macodocious/repos/portfolio/node_modules/postcss-load-config/node_modules/lilconfig1718054683108055132 1
 73/home/macodocious/repos/portfolio/node_modules/@parcel/core/lib/worker.js1718062059807643921 0
 92/home/macodocious/repos/portfolio/node_modules/@swc/helpers/_/_class_call_check/package.json1718061496007723133 0
@@ -4277,6 +4282,7 @@
 84/home/macodocious/repos/portfolio/node_modules/css-tree/cjs/syntax/node/Brackets.cjs1718061495287723244 0
 97/home/macodocious/repos/portfolio/node_modules/@vue/compiler-dom/dist/compiler-dom.esm-bundler.js1718004939428509074 0
 77/home/macodocious/repos/portfolio/node_modules/domutils/lib/querying.d.ts.map1718061495277723246 0
+57/home/macodocious/repos/portfolio/dist/index.ce17cef9.css1718073359033724198 0
 107/home/macodocious/repos/portfolio/node_modules/csso/node_modules/css-tree/lib/syntax/scope/atrulePrelude.js1718061497297722945 0
 71/home/macodocious/repos/portfolio/node_modules/@parcel/reporter-cli/lib1718062059717643933 1
 68/home/macodocious/repos/portfolio/node_modules/@parcel/packager-html1718062059657643941 1
@@ -4312,6 +4318,7 @@
 80/home/macodocious/repos/portfolio/node_modules/lmdb/dependencies/lz4/lib/lz4hc.c1718061495727723178 0
 74/home/macodocious/repos/portfolio/node_modules/domutils/lib/traversal.d.ts1718061495317723240 0
 77/home/macodocious/repos/portfolio/node_modules/lightningcss/node/targets.d.ts1718061495687723184 0
+49/home/macodocious/repos/portfolio/.postcssrc.json1718072912583787909 0
 74/home/macodocious/repos/portfolio/node_modules/domutils/lib/feeds.d.ts.map1718061495267723246 0
 73/home/macodocious/repos/portfolio/node_modules/entities/lib/esm/generated1718004939158508213 1
 78/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/regions/PF.js1718054683548055159 0
@@ -4374,7 +4381,7 @@
 66/home/macodocious/repos/portfolio/node_modules/@vue/shared/LICENSE1718004939328508756 0
 90/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/features/accelerometer.js1718054683378055148 0
 81/home/macodocious/repos/portfolio/node_modules/@parcel/core/src/PackagerRunner.js1718062059787643923 0
-42/home/macodocious/repos/portfolio/index.js1718070496684131952 0
+42/home/macodocious/repos/portfolio/index.js1718073358663724251 0
 62/home/macodocious/repos/portfolio/node_modules/yargs/README.md1718055110238081720 0
 61/home/macodocious/repos/portfolio/node_modules/@parcel/fs/lib1718062059727643933 1
 70/home/macodocious/repos/portfolio/node_modules/domutils/lib/index.d.ts1718061495307723240 0
@@ -4514,6 +4521,7 @@
 81/home/macodocious/repos/portfolio/node_modules/css-tree/cjs/syntax/node/Value.cjs1718061495597723195 0
 106/home/macodocious/repos/portfolio/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/common1718061495637723189 1
 100/home/macodocious/repos/portfolio/node_modules/csso/node_modules/css-tree/lib/syntax/pseudo/index.js1718061497407722928 0
+57/home/macodocious/repos/portfolio/dist/index.106ec773.css1718073366333723167 0
 77/home/macodocious/repos/portfolio/node_modules/@swc/helpers/src/_defaults.mjs1718061496107723119 0
 95/home/macodocious/repos/portfolio/node_modules/@swc/helpers/_/_array_like_to_array/package.json1718061495977723139 0
 74/home/macodocious/repos/portfolio/node_modules/source-map-js/lib/base64.js1718004939068507928 0
@@ -4549,7 +4557,7 @@
 87/home/macodocious/repos/portfolio/node_modules/@babel/highlight/node_modules/color-name1718061495217723254 1
 82/home/macodocious/repos/portfolio/node_modules/css-tree/cjs/syntax/atrule/page.cjs1718061495507723210 0
 82/home/macodocious/repos/portfolio/node_modules/@jridgewell/trace-mapping/README.md1718054683148055134 0
-33/home/macodocious/repos/portfolio1718071801513946002 1
+33/home/macodocious/repos/portfolio1718072919403786918 1
 83/home/macodocious/repos/portfolio/node_modules/@swc/helpers/esm/_read_only_error.js1718061495947723143 0
 78/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/regions/FJ.js1718054683498055155 0
 86/home/macodocious/repos/portfolio/node_modules/cliui/node_modules/emoji-regex/index.js1718055110168081716 0
@@ -7322,6 +7330,7 @@
 68/home/macodocious/repos/portfolio/node_modules/css-what/lib/commonjs1718061495337723236 1
 99/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/features/keyboardevent-location.js1718054683518055157 0
 79/home/macodocious/repos/portfolio/node_modules/css-what/lib/commonjs/parse.d.ts1718061495327723238 0
+56/home/macodocious/repos/portfolio/dist/index.2d339625.js1718073366333723167 0
 66/home/macodocious/repos/portfolio/node_modules/graceful-fs/LICENSE1718055110158081716 0
 100/home/macodocious/repos/portfolio/node_modules/string-width-cjs/node_modules/strip-ansi/package.json1718054683048055130 0
 92/home/macodocious/repos/portfolio/node_modules/@swc/helpers/src/_tagged_template_literal.mjs1718061496127723115 0
@@ -7591,6 +7600,7 @@
 78/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/regions/NO.js1718054683538055157 0
 73/home/macodocious/repos/portfolio/node_modules/color-convert/package.json1718054682988055125 0
 68/home/macodocious/repos/portfolio/node_modules/glob/dist/esm/bin.mjs1718054683278055143 0
+61/home/macodocious/repos/portfolio/dist/index.ce17cef9.css.map1718073359033724198 0
 103/home/macodocious/repos/portfolio/node_modules/csso/node_modules/css-tree/lib/syntax/node/WhiteSpace.js1718061497427722924 0
 94/home/macodocious/repos/portfolio/node_modules/caniuse-lite/data/features/css-rebeccapurple.js1718054683468055153 0
 72/home/macodocious/repos/portfolio/node_modules/msgpackr/rollup.config.js1718061495737723176 0
