@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Brian Mac's Portfolio",
   "scripts": {
-    "build": "postcss src/css/tailwind.css -o dist/css/tailwind.css"
+    "build": "postcss src/css/tailwind.css -o src/css/output.css"
   },
   "repository": {
     "type": "git",
