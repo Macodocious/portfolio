@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Brian Mac's Portfolio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build *.html",
-    "dev": "parcel *.html"
+    
   },
   "repository": {
     "type": "git",
