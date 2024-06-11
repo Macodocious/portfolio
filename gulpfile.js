@@ -1,19 +1,16 @@
 const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const tailwindcss = require('tailwindcss');
+const { exec } = require('child_process');
 
-gulp.task('css', function () {
-    return gulp.src('src/css/tailwind.css')
-        .pipe(postcss([
-            tailwindcss(),
-            autoprefixer(),
-        ]))
-        .pipe(gulp.dest('dist/css'));
+gulp.task('build', function (done) {
+    exec('npm run build', (err, stdout, stderr) => {
+        console.log(stdout);
+        console.error(stderr);
+        done(err);
+    });
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/css/tailwind.css', gulp.series('css'));
+    gulp.watch('src/*.html', gulp.series('build'));
 });
 
-gulp.task('default', gulp.series('css', 'watch'));
+gulp.task('default', gulp.series('build', 'watch'));
