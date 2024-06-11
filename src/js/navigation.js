@@ -4,28 +4,51 @@ export function navContainer(parentElement, links) {
     parentElement.appendChild(container);
 
     links.forEach(linkInfo => {
-        let link = document.createElement("a");
-        link.href = linkInfo.url;
-        link.classList.add("flex","items-center" ,"gap-2");
-        let linkText = document.createElement("p");
-        linkText.textContent = linkInfo.text;
+        if (linkInfo.url) {
+            let link = document.createElement("a");
+            link.href = linkInfo.url;
+            link.classList.add("flex", "items-center", "gap-2");
+            
+            if (links === linksForContainer2) {
+                let specialIcon = document.createElement("i");
+                specialIcon.classList.add("ph", "ph-arrow-bend-down-right");
+                link.appendChild(specialIcon);
+            }
 
-        if (linkInfo.class) {
-            linkInfo.class.split(" ").forEach(className => {
-                linkText.classList.add(className);
-            });
-        }
+            let linkText = document.createElement("p");
+            linkText.textContent = linkInfo.text;
 
-        if (linkInfo.text === "LinkedIn") {
-            let arrowIcon = document.createElement("i");
-            arrowIcon.classList.add("ph", "ph-arrow-up-right")
-            link.appendChild(linkText);
-            link.appendChild(arrowIcon);
+            if (linkInfo.class) {
+                linkInfo.class.split(" ").forEach(className => {
+                    linkText.classList.add(className);
+                });
+            }
+
+            if (linkInfo.url.startsWith("http")) {
+                let arrowIcon = document.createElement("i");
+                arrowIcon.classList.add("ph", "ph-arrow-up-right");
+                link.appendChild(linkText);
+                link.appendChild(arrowIcon);
+            } else {
+                link.appendChild(linkText);
+            }
+
+            container.appendChild(link);
+
         } else {
-            link.appendChild(linkText);
-        }
+            let linkText = document.createElement("p");
+            linkText.textContent = linkInfo.text;
+            linkText.classList.add("flex", "items-center", "gap-2");
 
-        container.appendChild(link);
+            if (linkInfo.class) {
+                linkInfo.class.split(" ").forEach(className => {
+                    linkText.classList.add(className);
+                });
+            }
+
+            container.appendChild(linkText);
+
+        }
     });
 
     return container;
@@ -37,6 +60,7 @@ const linksForContainer1 = [
     {url: "#", text: "Brian Mac", class: "text-xl font-semibold"}
 ];
 const linksForContainer2 = [
+    {text: "Projects"},
     {url: "#", text: "Tooni"},
     {url: "#", text: "Midaflow"},
     {url: "#", text: "Cruise"}
@@ -44,7 +68,7 @@ const linksForContainer2 = [
 const linksForContainer3 = [
     {url: "url5", text: "About"},
     {url: "url6", text: "Resume"},
-    {url: "url7", text: "LinkedIn"}
+    {url: "https://www.linkedin.com/in/brianmac97/", text: "LinkedIn"}
 ];
 
 navContainer(parentElement, linksForContainer1);
