@@ -514,6 +514,9 @@ video {
 .h-screen{
   height: 100vh;
 }
+.flex-col{
+  flex-direction: column;
+}
 .items-center{
   align-items: center;
 }
