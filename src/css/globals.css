@@ -5,6 +5,8 @@ body {
     background-color: #ffffff;
 }
 
+/* Tailwind Font Sizes */
+
 .text-sm {
     letter-spacing: -0.0284375rem;
 }
@@ -35,4 +37,14 @@ body {
 
 .text-5xl {
     line-height: 1.2;
+}
+
+/* Links */
+
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 48%;
 }
