@@ -47,7 +47,6 @@ export function navContainer(parentElement, links) {
             }
 
             container.appendChild(linkText);
-
         }
     });
 
@@ -60,15 +59,16 @@ const linksForContainer1 = [
     {url: "#", text: "Brian Mac", class: "text-xl font-semibold"}
 ];
 const linksForContainer2 = [
-    {text: "Projects"},
-    {url: "#", text: "Tooni"},
-    {url: "#", text: "Midaflow"},
-    {url: "#", text: "Cruise"}
+    {text: "Projects", class: "text-base"},
+    {url: "#", text: "Tooni", class: "text-base"},
+    {url: "#", text: "Midaflow", class: "text-base"},
+    {url: "#", text: "Cruise", class: "text-base"}
 ];
 const linksForContainer3 = [
-    {url: "url5", text: "About"},
-    {url: "url6", text: "Resume"},
-    {url: "https://www.linkedin.com/in/brianmac97/", text: "LinkedIn"}
+    {url: "url5", text: "About", class: "text-base"},
+    {url: "https://", text: "Resume", class: "text-base"},
+    {url: "https://www.linkedin.com/in/brianmac97/", text: "LinkedIn", class: "text-base"},
+    {url: "https://", text: "Tooni", class: "text-base"}
 ];
 
 navContainer(parentElement, linksForContainer1);
