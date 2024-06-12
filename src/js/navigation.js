@@ -9,11 +9,13 @@ export function navContainer(parentElement, links) {
             link.href = linkInfo.url;
             link.classList.add("flex", "items-center", "gap-2");
             
+            /* For <p>Projects</p>
             if (links === linksForContainer2) {
                 let specialIcon = document.createElement("i");
                 specialIcon.classList.add("ph", "ph-arrow-bend-down-right");
                 link.appendChild(specialIcon);
             }
+            */
 
             let linkText = document.createElement("p");
             linkText.textContent = linkInfo.text;
@@ -38,7 +40,6 @@ export function navContainer(parentElement, links) {
         } else {
             let linkText = document.createElement("p");
             linkText.textContent = linkInfo.text;
-            linkText.classList.add("flex", "items-center", "gap-2");
 
             if (linkInfo.class) {
                 linkInfo.class.split(" ").forEach(className => {
@@ -59,7 +60,7 @@ const linksForContainer1 = [
     {url: "#", text: "Brian Mac", class: "text-xl font-semibold"}
 ];
 const linksForContainer2 = [
-    {text: "Projects", class: "text-base"},
+    /* {text: "Projects", class: "text-base"}, */
     {url: "#", text: "Tooni", class: "text-base"},
     {url: "#", text: "Midaflow", class: "text-base"},
     {url: "#", text: "Cruise", class: "text-base"}
