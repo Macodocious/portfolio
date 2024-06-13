@@ -63,7 +63,7 @@ export function navContainer(parentElement, links) {
 const parentElement = document.getElementById("nav");
 
 const linksForContainer1 = [
-    {url: "#", text: "Brian Mac", class: "text-xl font-semibold"}
+    {url: "/src/index.html", text: "Brian Mac", class: "text-xl font-semibold"}
 ];
 const linksForContainer2 = [
     /* {text: "Projects", class: "text-base"}, */
