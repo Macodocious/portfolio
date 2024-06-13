@@ -547,6 +547,22 @@ video {
 .relative{
   position: relative;
 }
+.bottom-0{
+  bottom: 0px;
+}
+.left-auto{
+  left: auto;
+}
+.right-0{
+  right: 0px;
+}
+.top-0{
+  top: 0px;
+}
+.mx-60{
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -596,6 +612,9 @@ video {
 .justify-between{
   justify-content: space-between;
 }
+.gap-16{
+  gap: 4rem;
+}
 .gap-2{
   gap: 0.5rem;
 }
@@ -637,6 +656,10 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -655,6 +678,12 @@ video {
 .pb-24{
   padding-bottom: 6rem;
 }
+.pt-4{
+  padding-top: 1rem;
+}
+.pt-6{
+  padding-top: 1.5rem;
+}
 .pt-8{
   padding-top: 2rem;
 }
@@ -669,6 +698,10 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-sm{
   font-size: 0.875rem;
@@ -687,6 +720,9 @@ video {
 }
 .text-bk-32{
   color: #18171732;
+}
+.text-bk-48{
+  color: #18171748;
 }
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
