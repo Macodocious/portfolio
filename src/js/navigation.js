@@ -69,7 +69,7 @@ const linksForContainer3 = [
     {url: "url5", text: "About", class: "text-base"},
     {url: "../src/assets/BrianMac_Resume.pdf", text: "Resume", class: "text-base"},
     {url: "https://www.linkedin.com/in/brianmac97/", text: "LinkedIn", class: "text-base"},
-    {url: "https://", text: "Tooni", class: "text-base"}
+    /* {url: "https://", text: "Tooni", class: "text-base"} */
 ];
 
 navContainer(parentElement, linksForContainer1);
