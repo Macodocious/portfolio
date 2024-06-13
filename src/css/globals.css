@@ -48,3 +48,11 @@ a {
 a:hover {
     opacity: 48%;
 }
+
+.active-link {
+    opacity: 48%;
+}
+
+.active-link:hover {
+    opacity: 100%;
+}

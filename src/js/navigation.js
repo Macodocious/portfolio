@@ -3,6 +3,8 @@ export function navContainer(parentElement, links) {
     container.classList.add("flex", "flex-col", "gap-4");
     parentElement.appendChild(container);
 
+    const currentPath = window.location.pathname;
+
     links.forEach(linkInfo => {
         if (linkInfo.url) {
             let link = document.createElement("a");
@@ -35,6 +37,10 @@ export function navContainer(parentElement, links) {
                 link.appendChild(linkText);
             }
 
+            if (linkInfo.url === currentPath) {
+                link.classList.add('active-link');
+            }
+
             container.appendChild(link);
 
         } else {
@@ -61,13 +67,13 @@ const linksForContainer1 = [
 ];
 const linksForContainer2 = [
     /* {text: "Projects", class: "text-base"}, */
-    {url: "#", text: "Tooni", class: "text-base"},
-    {url: "#", text: "Midaflow", class: "text-base"},
+    {url: "/src/projects/tooni.html", text: "Tooni", class: "text-base"},
+    {url: "/src/projects/midaflow.html", text: "Midaflow", class: "text-base"},
     /* {url: "#", text: "Cruise", class: "text-base"} */
 ];
 const linksForContainer3 = [
-    {url: "url5", text: "About", class: "text-base"},
-    {url: "../src/assets/BrianMac_Resume.pdf", text: "Resume", class: "text-base"},
+    {url: "/src/about.html", text: "About", class: "text-base"},
+    {url: "/src/assets/BrianMac_Resume.pdf", text: "Resume", class: "text-base"},
     {url: "https://www.linkedin.com/in/brianmac97/", text: "LinkedIn", class: "text-base"},
     /* {url: "https://", text: "Tooni", class: "text-base"} */
 ];
