@@ -39,4 +39,9 @@
         @apply text-base;
         letter-spacing: -0.0325rem;
     }
+
+    a {
+        @apply text-base;
+        letter-spacing: -0.0325rem;
+    }
 }

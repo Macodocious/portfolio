@@ -36,3 +36,11 @@ a:hover {
 .active-link:hover {
     opacity: 48%;
 }
+
+#project-nav a:hover {
+    opacity: 100%;
+}
+
+#project-nav .active-link:hover {
+    opacity: 48%;
+}
