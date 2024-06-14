@@ -3,3 +3,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    h1 {
+        @apply text-5xl font-semibold;
+        line-height: 1.2;
+    }
+
+    h2 {
+        @apply text-4xl font-semibold;
+        letter-spacing: -0.073125rem;
+    }
+
+    h3 {
+        @apply text-3xl font-semibold;
+        letter-spacing: -0.0609375rem;
+    }
+
+    h4 {
+        @apply text-2xl font-semibold;
+        letter-spacing: -0.04875rem;
+    }
+
+    h5 {
+        @apply text-xl;
+        letter-spacing: -0.040625rem;
+    }
+
+    h6 {
+        @apply text-lg;
+        letter-spacing: -0.0365625rem;
+    }
+
+    p {
+        @apply text-base;
+        letter-spacing: -0.0325rem;
+    }
+}

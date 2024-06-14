@@ -1,3 +1,5 @@
+////////////////////////////////////////////////////////////////////////// Main Navigation //////////////////////////////////////////////////////////////////////////
+
 export function navContainer(parentElement, links) {
     let container = document.createElement("div");
     container.classList.add("flex", "flex-col", "gap-4");
@@ -69,7 +71,7 @@ const linksForContainer2 = [
     /* {text: "Projects", class: "text-base"}, */
     {url: "/src/projects/tooni.html", text: "Tooni", class: "text-base"},
     {url: "/src/projects/midaflow.html", text: "Midaflow", class: "text-base"},
-    {url: "#", text: "Cruise", class: "text-base"},
+    /* {url: "#", text: "Cruise", class: "text-base"}, */
 ];
 const linksForContainer3 = [
     {url: "/src/about.html", text: "About", class: "text-base"},

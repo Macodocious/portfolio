@@ -1,3 +1,5 @@
+////////////////////////////////////////////////////////////////////////// Project Navigation //////////////////////////////////////////////////////////////////////////
+
 export function navContainer(parentElement, links) {
     let container = document.createElement("div");
     container.classList.add("flex", "flex-col", "gap-4");
@@ -21,7 +23,7 @@ export function navContainer(parentElement, links) {
     links.forEach(linkInfo => {
         let link = document.createElement("a");
         link.href = linkInfo.url;
-        link.classList.add("text-base");
+        link.classList.add("text-base", "opacity-48");
         link.textContent = linkInfo.text;
 
         link.addEventListener("click", function(event) {
@@ -40,14 +42,25 @@ export function navContainer(parentElement, links) {
 }
 
 const parentElement = document.getElementById("project-nav");
+let linksForContainer;
 
-const linksForContainer = [
-    {url: "#overview", text: "Overview"},
-    {url: "#snapshots", text: "Snapshots"},
-    {url: "#context", text: "Context"},
-    {url: "#research", text: "Research"},
-    {url: "#design", text: "Design"},
-    {url: "#summary", text: "Summary"},
-];
+if (window.location.pathname.includes("midaflow.html")) {
+    linksForContainer = [
+        {url: "#overview", text: "Overview"},
+        {url: "#snapshots", text: "Snapshots"},
+        {url: "#context", text: "Context"},
+        {url: "#research", text: "Research"},
+        {url: "#design", text: "Design"},
+        {url: "#summary", text: "Summary"},
+    ];
+} else if (window.location.pathname.includes("tooni.html")) {
+    linksForContainer = [
+        {url: "#overview", text: "Overview"},
+        {url: "#features", text: "Features"},
+        {url: "#pricing", text: "Pricing"},
+        {url: "#testimonials", text: "Testimonials"},
+        {url: "#contact", text: "Contact"},
+    ];
+};
 
 navContainer(parentElement, linksForContainer);

@@ -10,7 +10,7 @@ gulp.task('build', function (done) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['src/**/*.html', 'src/**/*.js'], gulp.series('build'));
+    gulp.watch(['src/**/*.html', 'src/**/*.js', 'src/**/*.css'], gulp.series('build'));
 });
 
 gulp.task('default', gulp.series('build', 'watch'));

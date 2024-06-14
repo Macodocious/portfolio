@@ -9,38 +9,14 @@ body {
     background-color: #ffffff;
 }
 
-/* Tailwind Font Sizes */
+/* Tailwind Font */
 
 .text-sm {
     letter-spacing: -0.0284375rem;
 }
 
-.text-base {
-    letter-spacing: -0.0325rem;
-}
-
-.text-lg {
-    letter-spacing: -0.0365625rem;
-}
-
-.text-xl {
-    letter-spacing: -0.040625rem;
-}
-
-.text-2xl {
-    letter-spacing: -0.04875rem;
-}
-
-.text-3xl {
-    letter-spacing: -0.0609375rem;
-}
-
-.text-4xl {
-    letter-spacing: -0.073125rem;
-}
-
-.text-5xl {
-    line-height: 1.2;
+strong {
+    font-weight: inherit;
 }
 
 /* Links */
@@ -54,9 +30,9 @@ a:hover {
 }
 
 .active-link {
-    opacity: 48%;
+    opacity: 100%;
 }
 
 .active-link:hover {
-    opacity: 100%;
+    opacity: 48%;
 }
