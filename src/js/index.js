@@ -1,5 +1,5 @@
+import './components.js';
 import './navigation.js';
-import './thumbnail.js';
 import './project.js';
 
 // Add security to external links //////////////////////////////////////////////////////////////////////////////////////////////////////
