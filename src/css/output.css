@@ -710,6 +710,10 @@ a{
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -727,9 +731,6 @@ a{
 }
 .pb-24{
   padding-bottom: 6rem;
-}
-.pt-24{
-  padding-top: 6rem;
 }
 .pt-4{
   padding-top: 1rem;
