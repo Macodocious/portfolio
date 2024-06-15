@@ -584,6 +584,10 @@ a{
   line-height: 1.5rem;
         letter-spacing: -0.0325rem;
 }
+strong{
+  color: #18171732;
+        font-weight: inherit;
+}
 .fixed{
   position: fixed;
 }
@@ -756,9 +760,6 @@ a{
 .text-bk{
   --tw-text-opacity: 1;
   color: rgb(24 23 23 / var(--tw-text-opacity));
-}
-.text-bk-32{
-  color: #18171732;
 }
 .text-bk-48{
   color: #18171748;

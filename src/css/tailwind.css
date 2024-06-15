@@ -44,4 +44,9 @@
         @apply text-base;
         letter-spacing: -0.0325rem;
     }
+
+    strong {
+        @apply text-bk-32;
+        font-weight: inherit;
+    }
 }
