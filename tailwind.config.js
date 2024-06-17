@@ -26,6 +26,10 @@ module.exports = {
       opacity: {
         '48': '0.48',
       },
+      flex: {
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+      }
     },
   },
   plugins: [

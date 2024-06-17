@@ -623,6 +623,12 @@ strong{
 .flex{
   display: flex;
 }
+.h-4{
+  height: 1rem;
+}
+.h-5{
+  height: 1.25rem;
+}
 .h-screen{
   height: 100vh;
 }
@@ -638,11 +644,20 @@ strong{
 .w-4\/5{
   width: 80%;
 }
+.w-5{
+  width: 1.25rem;
+}
 .w-full{
   width: 100%;
 }
 .flex-1{
   flex: 1 1 0%;
+}
+.flex-2{
+  flex: 2 2 0%;
+}
+.flex-3{
+  flex: 3 3 0%;
 }
 .flex-col{
   flex-direction: column;
@@ -677,11 +692,17 @@ strong{
 .gap-8{
   gap: 2rem;
 }
+.whitespace-nowrap{
+  white-space: nowrap;
+}
 .rounded-2xl{
   border-radius: 1rem;
 }
 .rounded-full{
   border-radius: 9999px;
+}
+.rounded-md{
+  border-radius: 0.375rem;
 }
 .border{
   border-width: 1px;
@@ -697,6 +718,13 @@ strong{
   --tw-border-opacity: 1;
   border-color: rgb(244 247 247 / var(--tw-border-opacity));
 }
+.bg-\[\#904ee2\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 78 226 / var(--tw-bg-opacity));
+}
+.bg-bk-16{
+  background-color: #18171716;
+}
 .bg-gy{
   --tw-bg-opacity: 1;
   background-color: rgb(244 247 247 / var(--tw-bg-opacity));
@@ -704,6 +732,9 @@ strong{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-8{
+  padding: 2rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -756,6 +787,9 @@ strong{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.font-medium{
+  font-weight: 500;
 }
 .font-semibold{
   font-weight: 600;
