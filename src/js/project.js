@@ -35,7 +35,6 @@ export function navContainer(parentElement, links) {
         container.appendChild(link);
     });
 
-    // Trigger the scroll event once on page load to apply the active-link class
     applyActiveLinkClass();
 
     return container;

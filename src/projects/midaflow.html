@@ -123,22 +123,10 @@
                         components for the tasks I was assigned to.</h3>
                     <div class="flex flex-col gap-8">
                         <div class="flex gap-8">
-                            <div class="flex flex-col flex-2 gap-8 p-8 bg-gy rounded-2xl">
-                                <div class="flex gap-4">
-                                    <p class="font-medium">Projects</p>
-                                    <p class="font-medium">/</p>
-                                    <div class="flex gap-2 items-center">
-                                        <img src="/src/assets/midaflow/65120e6af41c615d8778561a_Midaflow-p-800.png" class="w-5 h-5 bg-bk-16 rounded-md">
-                                        <p class="font-medium">Midaflow</p>    
-                                    </div>
-                                    <p class="font-medium">/</p>
-                                    <div class="flex gap-2 items-center">
-                                        <div class="flex w-5 h-5 rounded-md items-center justify-center bg-[#904ee2]">
-                                            <i class="ph-fill ph-lightning" style="color: #fff; font-size: 0.75rem;"></i>
-                                        </div>
-                                        <p class="font-medium">MID-1</p>
-                                    </div>       
-                                </div>
+                            <div class="flex flex-col flex-2 gap-8 p-8 bg-gy rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-1</p>
+                                </jira-breadcrumbs>
                                 <h3>Vendor Details</h3>
                                 <div class="flex flex-col gap-2">
                                     <h5 class="font-semibold">Description</h5>
@@ -152,15 +140,26 @@
                                         <h6>access my transaction history with a vendor</h6>
                                     </div>
                                 </div>
+                                <jira-progress></jira-progress>
                                 <div class="flex flex-col gap-2">
-                                    <h5 class="font-semibold">Stories in this epic</h5>
-                                    <div class="flex gap-4 it">
-                                        <div class="w-full h-4 bg-[#904ee2] rounded-full"></div>
-                                        <p class="whitespace-nowrap">100% Done</p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    
+                                    <jira-task>
+                                        <div class="flex w-5 h-5 rounded-md items-center justify-center bg-[#904ee2]">
+                                            <i class="ph ph-check" style="color: #fff; font-size: 0.75rem;"></i>
+                                        </div>
+                                        <p>Design the vendor transactions table</p>
+                                    </jira-task>
+                                    <jira-task>
+                                        <div class="flex w-5 h-5 rounded-md items-center justify-center border border-solid border-bk-32"></div>
+                                        <p>Redesign layout of vendor card</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-50">
+                                        <div class="flex w-5 h-5 rounded-md items-center justify-center border border-solid border-bk-32"></div>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-50">
+                                        <div class="flex w-5 h-5 rounded-md items-center justify-center border border-solid border-bk-32"></div>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
                                 </div>
                             </div>
                             <h3 class="flex-3">Explanation</h3>
