@@ -83,7 +83,7 @@ class JiraBreadcrumbs extends HTMLElement {
             const breadcrumb5 = document.createElement('div');
             breadcrumb5.classList.add('flex', 'gap-2', 'items-center');
                 const breadcrumb5container = document.createElement('div');
-                breadcrumb5container.classList.add('flex', 'w-5', 'h-5', 'rounded.md', 'items-center', 'justify-center', 'bg-[#904ee2]');
+                breadcrumb5container.classList.add('flex', 'w-5', 'h-5', 'rounded-md', 'items-center', 'justify-center', 'bg-[#904ee2]');
                     const breadcrumb5Icon = document.createElement('i');
                     breadcrumb5Icon.classList.add('ph-fill', 'ph-lightning');
                     breadcrumb5Icon.style.color = '#fff';
