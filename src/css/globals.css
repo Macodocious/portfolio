@@ -57,8 +57,9 @@ a:hover {
     position: absolute;
     display: none;
     background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fbfbfb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem 0 #18171724;
     z-index: 1000;
 }

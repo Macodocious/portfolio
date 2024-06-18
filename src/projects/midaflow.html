@@ -83,7 +83,7 @@
                     <h3>Enterprise resource planning (ERP) <strong>is a comprehensive software system designed to</strong> integrate and streamline 
                         various aspects of an organization's core business activities. <strong>It serves as a centralized hub that connects different 
                         departments and functions within the organization such as:</strong></h3>
-                    <img src="/src/assets/midaflow/Context.svg">
+                    <img src="/src/assets/midaflow/context.svg">
                     <h3>The founders of Midaflow saw a gap in the market. <strong>Predominantly, ERP software systems were only accessible to large 
                         organizations with the resources to afford such a comprehensive enterprise solution.</strong> They believed that ERP software 
                         systems should be more accessible and easy-to-use for small and medium-sized businesses. For Midaflow, they focused
@@ -96,14 +96,14 @@
                         <strong>This would have posed a significant challenge for me when designing for this system.</strong>
                         However, I did notice some similarities between ERP software systems and Shopify<strong>, for which I do have extensive
                         knowledge and experience in.</strong></h3>
-                    <img src="/src/assets/midaflow/Research.svg">
+                    <img src="/src/assets/midaflow/research.svg">
                     <h3>Both systems integrate and streamline various aspects of core business activities, and serve as a centralized hub for their organization.
                         <strong>This comparison helped me understand the core concept of an ERP software system.</strong></h3>
                     <h2 class="pt-8">Learning what works and what doesn't</h2>
                     <h3><strong>Given the project's time constraints and the extensive research already conducted by the founders, further research was not a priority. </strong>
                         So in order for us interns to get a better idea on what could be improved, we conducted discovery research by analyzing user feedback 
                         on our competitors. This allowed us to identify common strengths and weaknesses.</h3>
-                    <img src="/src/assets/midaflow/User Feedback.svg" class="w-11/12 mx-auto">
+                    <img src="/src/assets/midaflow/user-feedback.svg" class="w-11/12 mx-auto">
                     <h3>Based on the feedback, we can see that users value a product that is easy-to-use and reliable. They appreciate intuitive designs tailored for 
                         both end-users and administrators, as well as strong customer support. However, a wide range of features can overwhelm and confuse users, 
                         and persistent issues with supplier integration despite regular support can be a major concern.</h3>
@@ -122,8 +122,8 @@
                         <strong>This limitation meant we could only design within the given design system up to a certain degree.</strong> Nevertheless, this is how I designed our 
                         components for the tasks I was assigned to.</h3>
                     <div class="flex flex-col gap-8">
-                        <div class="flex gap-8 p-8 bg-gy rounded-2xl">
-                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 rounded-2xl relative">
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
                                 <jira-breadcrumbs>
                                     <p class="font-medium">MID-1</p>
                                 </jira-breadcrumbs>
@@ -161,25 +161,393 @@
                                 </div>
                             </div>
                             <div class="flex flex-2 relative justify-center items-center">
-                                <img src="/src/assets/midaflow/Transactions Component.png" class="w-4/5 h-4/5">
+                                <img 
+                                    src="/src/assets/midaflow/transaction-table.png" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            /src/assets/midaflow/transaction-table-500.png 500w,
+                                            /src/assets/midaflow/transaction-table-800.png 800w,
+                                            /src/assets/midaflow/transaction-table-1080.png 1080w,
+                                            /src/assets/midaflow/transaction-table-1600.png 1600w,
+                                            /src/assets/midaflow/transaction-table-2000.png 2000w"
+                                    alt="">
                                 <div class="dot" style="top: 20%; left: 30%;" data-info="
-                                    <h3>Dot 1 Title</h3>
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
                                     <p>Information about Dot 1.</p>">
                                 </div>
                                 <div class="dot" style="top: 50%; left: 60%;" data-info="
-                                    <h3>Dot 2 Title</h3>
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
                                     <p>Information about Dot 2.</p>">
                                 </div>
                                 <div class="dot" style="top: 70%; left: 40%;" data-info="
-                                    <h3>Dot 3 Title</h3>
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
                                     <p>Information about Dot 3.</p>">
                                 </div>
                             </div>
                             <div class="dropdown" id="dropdown"></div>
                         </div>
-                        <banner-image 
-                            src="/src/assets/midaflow/6513414b4bb9ffe9ed30bfed_Dashboard.webp">
-                        </banner-image>
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-1</p>
+                                </jira-breadcrumbs>
+                                <h3>Vendor Details</h3>
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-semibold">Description</h5>
+                                    <h6>As a user, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access/manage my vendor's information</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access my transaction history with a vendor</h6>
+                                    </div>
+                                </div>
+                                <jira-progress></jira-progress>
+                                <div class="flex flex-col gap-2">
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the vendor transactions table</p>
+                                    </jira-task>
+                                    <jira-task>
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Redesign layout of vendor card</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                </div>
+                            </div>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img 
+                                    src="" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            "
+                                    alt="">
+                                <div class="dot" style="top: 20%; left: 30%;" data-info="
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
+                                    <p>Information about Dot 1.</p>">
+                                </div>
+                                <div class="dot" style="top: 50%; left: 60%;" data-info="
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
+                                    <p>Information about Dot 2.</p>">
+                                </div>
+                                <div class="dot" style="top: 70%; left: 40%;" data-info="
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
+                                    <p>Information about Dot 3.</p>">
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
+                        </div>
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-12</p>
+                                </jira-breadcrumbs>
+                                <h3>Entity Users</h3>
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-semibold">Description</h5>
+                                    <h6>As an inviter, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>add another user to the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>update a user from the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>delete a user from the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>see all users under the business</h6>
+                                    </div>
+                                    <h6 class="pt-4">As an invitee, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access the onboarding flow</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>edit my user information</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>view my non-editable user information</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access the application</h6>
+                                    </div>
+                                </div>
+                                <jira-progress></jira-progress>
+                                <div class="flex flex-col gap-2">
+                                    <jira-task>
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the entity user flow</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the entity user sign up flow</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                </div>
+                            </div>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img 
+                                    src="" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            "
+                                    alt="">
+                                <div class="dot" style="top: 20%; left: 30%;" data-info="
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
+                                    <p>Information about Dot 1.</p>">
+                                </div>
+                                <div class="dot" style="top: 50%; left: 60%;" data-info="
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
+                                    <p>Information about Dot 2.</p>">
+                                </div>
+                                <div class="dot" style="top: 70%; left: 40%;" data-info="
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
+                                    <p>Information about Dot 3.</p>">
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
+                        </div>
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-12</p>
+                                </jira-breadcrumbs>
+                                <h3>Entity Users</h3>
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-semibold">Description</h5>
+                                    <h6>As an inviter, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>add another user to the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>update a user from the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>delete a user from the business</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>see all users under the business</h6>
+                                    </div>
+                                    <h6 class="pt-4">As an invitee, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access the onboarding flow</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>edit my user information</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>view my non-editable user information</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>access the application</h6>
+                                    </div>
+                                </div>
+                                <jira-progress></jira-progress>
+                                <div class="flex flex-col gap-2">
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the entity user flow</p>
+                                    </jira-task>
+                                    <jira-task>
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the entity user sign up flow</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                </div>
+                            </div>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img 
+                                    src="" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            "
+                                    alt="">
+                                <div class="dot" style="top: 20%; left: 30%;" data-info="
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
+                                    <p>Information about Dot 1.</p>">
+                                </div>
+                                <div class="dot" style="top: 50%; left: 60%;" data-info="
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
+                                    <p>Information about Dot 2.</p>">
+                                </div>
+                                <div class="dot" style="top: 70%; left: 40%;" data-info="
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
+                                    <p>Information about Dot 3.</p>">
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
+                        </div>
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-31</p>
+                                </jira-breadcrumbs>
+                                <h3>Approval Workflow</h3>
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-semibold">Description</h5>
+                                    <h6>As a user, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>approve or reject invoices that require reviews from me</h6>
+                                    </div>
+                                </div>
+                                <jira-progress></jira-progress>
+                                <div class="flex flex-col gap-2">
+                                    <jira-task>
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Design the approval workflow</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                </div>
+                            </div>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img 
+                                    src="" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            "
+                                    alt="">
+                                <div class="dot" style="top: 20%; left: 30%;" data-info="
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
+                                    <p>Information about Dot 1.</p>">
+                                </div>
+                                <div class="dot" style="top: 50%; left: 60%;" data-info="
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
+                                    <p>Information about Dot 2.</p>">
+                                </div>
+                                <div class="dot" style="top: 70%; left: 40%;" data-info="
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
+                                    <p>Information about Dot 3.</p>">
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
+                        </div>
+                        <div class="flex gap-8 p-8 bg-gy border border-solid border-bk-4 rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 border border-solid border-[#efefef] rounded-2xl relative">
+                                <jira-breadcrumbs>
+                                    <p class="font-medium">MID-40</p>
+                                </jira-breadcrumbs>
+                                <h3>Dashboard</h3>
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-semibold">Description</h5>
+                                    <h6>As a user, I should be able to:</h6>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>have an overview of my 'total spending', 'average spending', and 'amount of invoices due'</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>view a pie chart of 'paid' vs 'to-be-paid' vs 'overdue invoices'</h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <i class="ph-fill ph-circle" style="font-size: 0.5rem; padding: 0.5625rem 0 0 1rem"></i>
+                                        <h6>view a stacked bar chart of 'inbox' vs 'ready for review' vs 'approved' vs 'pending vs paid' vs 'canceled'</h6>
+                                    </div>
+                                </div>
+                                <jira-progress></jira-progress>
+                                <div class="flex flex-col gap-2">
+                                    <jira-task>
+                                        <jira-checkmark></jira-checkmark>
+                                        <p>Update & complete dashboard page</p>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                    <jira-task class="opacity-40">
+                                        <jira-checkmark></jira-checkmark>
+                                        <div class="w-9/12 h-5 rounded-md bg-bk-12"></div>
+                                    </jira-task>
+                                </div>
+                            </div>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img 
+                                    src="" 
+                                    class="w-11/12"
+                                    title=""
+                                    sizes="(max-width: 767px) 90vw, (max-width: 991px) 89vw, (max-width: 1439px) 80vw, (max-width: 1919px) 70vw, 800px"
+                                    srcset="
+                                            "
+                                    alt="">
+                                <div class="dot" style="top: 20%; left: 30%;" data-info="
+                                    <h6 class='font-medium'>Dot 1 Title</h6>
+                                    <p>Information about Dot 1.</p>">
+                                </div>
+                                <div class="dot" style="top: 50%; left: 60%;" data-info="
+                                    <h6 class='font-medium'>Dot 2 Title</h6>
+                                    <p>Information about Dot 2.</p>">
+                                </div>
+                                <div class="dot" style="top: 70%; left: 40%;" data-info="
+                                    <h6 class='font-medium'>Dot 3 Title</h6>
+                                    <p>Information about Dot 3.</p>">
+                                </div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -629,9 +629,6 @@ strong{
 .h-4{
   height: 1rem;
 }
-.h-4\/5{
-  height: 80%;
-}
 .h-5{
   height: 1.25rem;
 }
@@ -719,6 +716,10 @@ strong{
 .border-solid{
   border-style: solid;
 }
+.border-\[\#efefef\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 239 239 / var(--tw-border-opacity));
+}
 .border-bk{
   --tw-border-opacity: 1;
   border-color: rgb(24 23 23 / var(--tw-border-opacity));
@@ -726,9 +727,8 @@ strong{
 .border-bk-24{
   border-color: #18171724;
 }
-.border-gy{
-  --tw-border-opacity: 1;
-  border-color: rgb(251 251 251 / var(--tw-border-opacity));
+.border-bk-4{
+  border-color: #18171704;
 }
 .bg-\[\#904ee2\]{
   --tw-bg-opacity: 1;

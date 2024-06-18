@@ -26,7 +26,7 @@ class BannerImage extends HTMLElement {
         super();
 
         const img = document.createElement('img');
-        img.classList.add('bg-gy', 'object-cover', 'rounded-2xl', 'border', 'border-gy', 'border-solid', 'w-full');
+        img.classList.add('bg-gy', 'object-cover', 'rounded-2xl', 'border', 'border-bk-4', 'border-solid', 'w-full');
         img.src = this.getAttribute('src') || '';
 
         this.innerHTML = '';
@@ -62,7 +62,7 @@ class JiraBreadcrumbs extends HTMLElement {
             breadcrumb3.classList.add('flex', 'gap-2', 'items-center');
                 const breadcrumb3Img = document.createElement('img');
                 breadcrumb3Img.classList.add('w-5', 'h-5', 'bg-bk-12', 'rounded-md');
-                breadcrumb3Img.src = '/src/assets/midaflow/65120e6af41c615d8778561a_Midaflow-p-800.png';
+                breadcrumb3Img.src = '/src/assets/midaflow/midaflow-logo.png';
 
                 breadcrumb3.appendChild(breadcrumb3Img);
 

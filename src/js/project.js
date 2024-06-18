@@ -79,9 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const flexContainer = document.querySelector('.flex.relative');
     const dots = flexContainer.querySelectorAll('.dot');
     const dropdown = document.getElementById('dropdown');
-    let isHovering = false; // Flag to track hover state
+    let isHovering = false;
 
-    // Function to show the dropdown
     const showDropdown = (dot) => {
         const info = dot.getAttribute('data-info');
         const dotRect = dot.getBoundingClientRect();
@@ -89,7 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         dropdown.innerHTML = info;
 
-        const topPosition = dotRect.top - containerRect.top + dotRect.height + flexContainer.scrollTop;
+        const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        const topPosition = dotRect.top - containerRect.top + dotRect.height + (1 * remToPx) + flexContainer.scrollTop;
         const leftPosition = dotRect.left - containerRect.left + flexContainer.scrollLeft;
 
         dropdown.style.top = `${topPosition}px`;
@@ -98,15 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdown.style.display = 'block';
     };
 
-    // Function to hide the dropdown
     const hideDropdown = () => {
         dropdown.style.display = 'none';
     };
 
-    // Event listeners for each dot
     dots.forEach(dot => {
         dot.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent click event on dot from triggering document click event
+            event.stopPropagation();
             showDropdown(dot);
         });
 
@@ -121,18 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!isHovering) {
                     hideDropdown();
                 }
-            }, 300); // Delay hiding dropdown to prevent flickering
+            }, 600);
         });
     });
 
-    // Event listener to hide dropdown on document click
     document.addEventListener('click', () => {
         if (!isHovering) {
             hideDropdown();
         }
     });
 
-    // Event listener to hide dropdown when mouse leaves the dropdown itself
     dropdown.addEventListener('mouseleave', () => {
         hideDropdown();
     });
