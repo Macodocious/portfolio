@@ -60,17 +60,17 @@ class JiraBreadcrumbs extends HTMLElement {
 
             const breadcrumb3 = document.createElement('div');
             breadcrumb3.classList.add('flex', 'gap-2', 'items-center');
-                const breadcrumb3img = document.createElement('img');
-                breadcrumb3img.classList.add('w-5', 'h-5', 'bg-bk-12', 'rounded-md');
-                breadcrumb3img.src = '/src/assets/midaflow/65120e6af41c615d8778561a_Midaflow-p-800.png';
+                const breadcrumb3Img = document.createElement('img');
+                breadcrumb3Img.classList.add('w-5', 'h-5', 'bg-bk-12', 'rounded-md');
+                breadcrumb3Img.src = '/src/assets/midaflow/65120e6af41c615d8778561a_Midaflow-p-800.png';
 
-                breadcrumb3.appendChild(breadcrumb3img);
+                breadcrumb3.appendChild(breadcrumb3Img);
 
-                const breadcrumb3text = document.createElement('p');
-                breadcrumb3text.classList.add('font-medium');
-                breadcrumb3text.textContent = "Midaflow";
+                const breadcrumb3Text = document.createElement('p');
+                breadcrumb3Text.classList.add('font-medium');
+                breadcrumb3Text.textContent = "Midaflow";
 
-                breadcrumb3.appendChild(breadcrumb3text);
+                breadcrumb3.appendChild(breadcrumb3Text);
 
             breadcrumbs.appendChild(breadcrumb3);
 
@@ -84,12 +84,12 @@ class JiraBreadcrumbs extends HTMLElement {
             breadcrumb5.classList.add('flex', 'gap-2', 'items-center');
                 const breadcrumb5container = document.createElement('div');
                 breadcrumb5container.classList.add('flex', 'w-5', 'h-5', 'rounded.md', 'items-center', 'justify-center', 'bg-[#904ee2]');
-                    const breadcrumb5icon = document.createElement('i');
-                    breadcrumb5icon.classList.add('ph-fill', 'ph-lightning');
-                    breadcrumb5icon.style.color = '#fff';
-                    breadcrumb5icon.style.fontSize = "0.75rem";
+                    const breadcrumb5Icon = document.createElement('i');
+                    breadcrumb5Icon.classList.add('ph-fill', 'ph-lightning');
+                    breadcrumb5Icon.style.color = '#fff';
+                    breadcrumb5Icon.style.fontSize = "0.75rem";
                 
-                    breadcrumb5container.appendChild(breadcrumb5icon);
+                    breadcrumb5container.appendChild(breadcrumb5Icon);
 
                 breadcrumb5.appendChild(breadcrumb5container);
 
@@ -116,7 +116,7 @@ class JiraProgress extends HTMLElement {
         const progress = document.createElement('div');
         progress.classList.add('flex', 'flex-col', 'gap-2');
             const progressHeading = document.createElement('h5');
-            progressHeading.classList.add('font-semibold')
+            progressHeading.classList.add('font-semibold');
             progressHeading.textContent = "Stories in this epic";
 
             progress.appendChild(progressHeading);
@@ -141,6 +141,30 @@ class JiraProgress extends HTMLElement {
 }
 
 customElements.define('jira-progress', JiraProgress);
+
+////////////////////////////////////////////////////////////////////////// Jira Checkmark //////////////////////////////////////////////////////////////////////////
+
+class JiraCheckmark extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = '';
+        const checkmark = document.createElement('div');
+        checkmark.classList.add('flex', 'w-5', 'h-5', 'rounded-md', 'items-center', 'justify-center', 'bg-[#904ee2]');
+            const checkmarkIcon = document.createElement('i');
+            checkmarkIcon.classList.add('ph', 'ph-check');
+            checkmarkIcon.style.color = '#fff';
+            checkmarkIcon.style.fontSize = "0.75rem";
+
+            checkmark.appendChild(checkmarkIcon);
+
+        this.appendChild(checkmark);
+    }
+}
+
+customElements.define('jira-checkmark', JiraCheckmark);
 
 ////////////////////////////////////////////////////////////////////////// Jira Task //////////////////////////////////////////////////////////////////////////
 
