@@ -87,7 +87,7 @@ class JiraBreadcrumbs extends HTMLElement {
                     const breadcrumb5icon = document.createElement('i');
                     breadcrumb5icon.classList.add('ph-fill', 'ph-lightning');
                     breadcrumb5icon.style.color = '#fff';
-                    breadcrumb5icon.style.FontSize = "0.75rem";
+                    breadcrumb5icon.style.fontSize = "0.75rem";
                 
                     breadcrumb5container.appendChild(breadcrumb5icon);
 
