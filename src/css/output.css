@@ -629,6 +629,9 @@ strong{
 .h-4{
   height: 1rem;
 }
+.h-4\/5{
+  height: 80%;
+}
 .h-5{
   height: 1.25rem;
 }
@@ -661,9 +664,6 @@ strong{
 }
 .flex-2{
   flex: 2 2 0%;
-}
-.flex-3{
-  flex: 3 3 0%;
 }
 .flex-col{
   flex-direction: column;
@@ -728,7 +728,7 @@ strong{
 }
 .border-gy{
   --tw-border-opacity: 1;
-  border-color: rgb(244 247 247 / var(--tw-border-opacity));
+  border-color: rgb(251 251 251 / var(--tw-border-opacity));
 }
 .bg-\[\#904ee2\]{
   --tw-bg-opacity: 1;
@@ -737,9 +737,12 @@ strong{
 .bg-bk-12{
   background-color: #18171712;
 }
+.bg-bk-6{
+  background-color: #18171706;
+}
 .bg-gy{
   --tw-bg-opacity: 1;
-  background-color: rgb(244 247 247 / var(--tw-bg-opacity));
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
 }
 .object-cover{
   -o-object-fit: cover;

@@ -122,8 +122,8 @@
                         <strong>This limitation meant we could only design within the given design system up to a certain degree.</strong> Nevertheless, this is how I designed our 
                         components for the tasks I was assigned to.</h3>
                     <div class="flex flex-col gap-8">
-                        <div class="flex gap-8">
-                            <div class="flex flex-col flex-1 gap-8 p-8 bg-gy rounded-2xl relative">
+                        <div class="flex gap-8 p-8 bg-gy rounded-2xl">
+                            <div class="flex flex-col flex-1 gap-8 p-8 bg-bk-6 rounded-2xl relative">
                                 <jira-breadcrumbs>
                                     <p class="font-medium">MID-1</p>
                                 </jira-breadcrumbs>
@@ -160,7 +160,13 @@
                                     </jira-task>
                                 </div>
                             </div>
-                            <h3 class="flex-2">Explanation</h3>
+                            <div class="flex flex-2 relative justify-center items-center">
+                                <img src="/src/assets/midaflow/Transactions Component.png" class="w-4/5 h-4/5">
+                                <div class="dot" data-info="<h3>Dot 1 Title</h3><p>Information about Dot 1.</p>" style="top: 20%; left: 30%;"></div>
+                                <div class="dot" data-info="Vendor Transactions 2" style="top: 50%; left: 60%;"></div>
+                                <div class="dot" data-info="Vendor Transactions 3" style="top: 70%; left: 40%;"></div>
+                            </div>
+                            <div class="dropdown" id="dropdown"></div>
                         </div>
                         <banner-image 
                             src="/src/assets/midaflow/6513414b4bb9ffe9ed30bfed_Dashboard.webp">

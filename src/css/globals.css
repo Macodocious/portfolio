@@ -40,3 +40,25 @@ a:hover {
 #project-nav .active-link:hover {
     opacity: 48%;
 }
+
+/* Project Banner Image */
+
+.dot {
+    position: absolute;
+    width: 0.75rem;;
+    height: 0.75rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.5rem #18171748;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}

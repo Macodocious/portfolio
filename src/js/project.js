@@ -72,3 +72,69 @@ if (window.location.pathname.includes("midaflow.html")) {
 };
 
 navContainer(parentElement, linksForContainer);
+
+////////////////////////////////////////////////////////////////////////// Project Banner Image //////////////////////////////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', () => {
+    const flexContainer = document.querySelector('.flex.relative');
+    const dots = flexContainer.querySelectorAll('.dot');
+    const dropdown = document.getElementById('dropdown');
+    let isHovering = false; // Flag to track hover state
+
+    // Function to show the dropdown
+    const showDropdown = (dot) => {
+        const info = dot.getAttribute('data-info');
+        const dotRect = dot.getBoundingClientRect();
+        const containerRect = flexContainer.getBoundingClientRect();
+
+        dropdown.innerHTML = info;
+
+        const topPosition = dotRect.top - containerRect.top + dotRect.height + flexContainer.scrollTop;
+        const leftPosition = dotRect.left - containerRect.left + flexContainer.scrollLeft;
+
+        dropdown.style.top = `${topPosition}px`;
+        dropdown.style.left = `${leftPosition}px`;
+
+        dropdown.style.display = 'block';
+    };
+
+    // Function to hide the dropdown
+    const hideDropdown = () => {
+        dropdown.style.display = 'none';
+    };
+
+    // Event listeners for each dot
+    dots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click event on dot from triggering document click event
+            showDropdown(dot);
+        });
+
+        dot.addEventListener('mouseenter', () => {
+            isHovering = true;
+            showDropdown(dot);
+        });
+
+        dot.addEventListener('mouseleave', () => {
+            isHovering = false;
+            setTimeout(() => {
+                if (!isHovering) {
+                    hideDropdown();
+                }
+            }, 300); // Delay hiding dropdown to prevent flickering
+        });
+    });
+
+    // Event listener to hide dropdown on document click
+    document.addEventListener('click', () => {
+        if (!isHovering) {
+            hideDropdown();
+        }
+    });
+
+    // Event listener to hide dropdown when mouse leaves the dropdown itself
+    dropdown.addEventListener('mouseleave', () => {
+        hideDropdown();
+    });
+});
+
