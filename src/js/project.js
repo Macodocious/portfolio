@@ -95,11 +95,21 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdown.style.top = `${topPosition}px`;
         dropdown.style.left = `${leftPosition}px`;
 
+        dropdown.style.transition = 'opacity 0.3s ease-in-out';
         dropdown.style.display = 'block';
+
+        setTimeout(() => {
+            dropdown.style.opacity = '100%';
+        }, 10);
     };
 
     const hideDropdown = () => {
-        dropdown.style.display = 'none';
+        dropdown.style.transition = 'opacity 0.3s ease-in-out';
+        dropdown.style.opacity = '0%';
+
+        setTimeout(() => {
+            dropdown.style.display = 'none';
+        }, 150);
     };
 
     dots.forEach(dot => {
@@ -119,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!isHovering) {
                     hideDropdown();
                 }
-            }, 600);
+            }, 150);
         });
     });
 
