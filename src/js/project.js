@@ -1,16 +1,19 @@
 ////////////////////////////////////////////////////////////////////////// Project Navigation //////////////////////////////////////////////////////////////////////////
 
 export function navContainer(parentElement, links) {
-    let container = document.createElement("div");
+    const container = document.createElement("div");
     container.classList.add("flex", "flex-col", "gap-4");
     parentElement.appendChild(container);
 
     const applyActiveLinkClass = () => {
         links.forEach(linkInfo => {
             const section = document.querySelector(linkInfo.url);
-            const link = container.querySelector(`[href="${linkInfo.url}"]`);
+            if (!section) return; // Exit if section is not found
 
-            if (section.getBoundingClientRect().top < window.innerHeight / 2 && section.getBoundingClientRect().bottom > window.innerHeight / 2) {
+            const link = container.querySelector(`[href="${linkInfo.url}"]`);
+            const rect = section.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
                 link.classList.add('active-link');
             } else {
                 link.classList.remove('active-link');
@@ -18,10 +21,14 @@ export function navContainer(parentElement, links) {
         });
     };
 
-    window.addEventListener("scroll", applyActiveLinkClass);
+    const handleScroll = () => {
+        applyActiveLinkClass();
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     links.forEach(linkInfo => {
-        let link = document.createElement("a");
+        const link = document.createElement("a");
         link.href = linkInfo.url;
         link.classList.add("text-base", "opacity-48");
         link.textContent = linkInfo.text;
@@ -37,7 +44,9 @@ export function navContainer(parentElement, links) {
 
     applyActiveLinkClass();
 
-    return container;
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
 }
 
 const parentElement = document.getElementById("project-nav");
