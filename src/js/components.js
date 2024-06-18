@@ -122,7 +122,7 @@ class JiraProgress extends HTMLElement {
             progress.appendChild(progressHeading);
 
             const progressDetails = document.createElement('div');
-            progressDetails.classList.add('flex', 'gap-4');
+            progressDetails.classList.add('flex', 'gap-4', 'items-center');
                 const progressBar = document.createElement('div');
                 progressBar.classList.add('w-full', 'h-4', 'bg-[#904ee2]', 'rounded-full');
 
