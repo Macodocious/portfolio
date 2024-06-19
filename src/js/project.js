@@ -59,7 +59,7 @@ if (window.location.pathname.includes("midaflow.html")) {
         {url: "#context", text: "Context"},
         {url: "#research", text: "Research"},
         {url: "#design", text: "Design"},
-        {url: "#summary", text: "Summary"},
+        {url: "#final", text: "Finale"},
     ];
 } else if (window.location.pathname.includes("tooni.html")) {
     linksForContainer = [

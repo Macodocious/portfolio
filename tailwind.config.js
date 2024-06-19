@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
       },
+      fontSize: {
+        '4.5xl': ['2.75rem', { lineHeight: '3rem' }],
+      },
       colors: {
         'wh': '#FFFFFF',
         'gy': '#FBFBFB',
