@@ -36,6 +36,27 @@ class BannerImage extends HTMLElement {
 
 customElements.define('banner-image', BannerImage);
 
+////////////////////////////////////////////////////////////////////////// Jira Banner //////////////////////////////////////////////////////////////////////////
+
+class JiraBanner extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        const task = document.createElement('div');
+        task.classList.add('flex', 'gap-8', 'p-8', 'bg-gy', 'border', 'border-solid', 'border-bk-4', 'rounded-2xl');
+
+        while (this.firstChild) {
+            task.appendChild(this.firstChild);
+        }
+
+        this.appendChild(task);
+    }
+}
+
+customElements.define('jira-banner', JiraBanner);
+
 ////////////////////////////////////////////////////////////////////////// Jira Breadcrumbs //////////////////////////////////////////////////////////////////////////
 
 class JiraBreadcrumbs extends HTMLElement {
@@ -47,13 +68,13 @@ class JiraBreadcrumbs extends HTMLElement {
         const breadcrumbs = document.createElement('div');
         breadcrumbs.classList.add('flex', 'gap-4');
             const breadcrumb1 = document.createElement('p');
-            breadcrumb1.classList.add('font-medium');
+            breadcrumb1.classList.add('text-sm', 'font-medium');
             breadcrumb1.textContent = "Projects";
 
             breadcrumbs.appendChild(breadcrumb1);
 
             const breadcrumb2 = document.createElement('p');
-            breadcrumb2.classList.add('font-medium');
+            breadcrumb2.classList.add('text-sm', 'font-medium');
             breadcrumb2.textContent = "/";
 
             breadcrumbs.appendChild(breadcrumb2);
@@ -67,7 +88,7 @@ class JiraBreadcrumbs extends HTMLElement {
                 breadcrumb3.appendChild(breadcrumb3Img);
 
                 const breadcrumb3Text = document.createElement('p');
-                breadcrumb3Text.classList.add('font-medium');
+                breadcrumb3Text.classList.add('text-sm', 'font-medium');
                 breadcrumb3Text.textContent = "Midaflow";
 
                 breadcrumb3.appendChild(breadcrumb3Text);
@@ -75,7 +96,7 @@ class JiraBreadcrumbs extends HTMLElement {
             breadcrumbs.appendChild(breadcrumb3);
 
             const breadcrumb4 = document.createElement('p');
-            breadcrumb4.classList.add('font-medium');
+            breadcrumb4.classList.add('text-sm', 'font-medium');
             breadcrumb4.textContent = "/";
 
             breadcrumbs.appendChild(breadcrumb4);

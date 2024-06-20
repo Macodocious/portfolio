@@ -16,12 +16,12 @@
     }
 
     h3 {
-        @apply text-3xl font-semibold;
+        @apply text-3xl font-medium;
         letter-spacing: calc(-0.0325rem * 1.875);
     }
 
     h4 {
-        @apply text-2xl font-semibold;
+        @apply text-2xl font-medium;
         letter-spacing: calc(-0.0325rem * 1.5);
     }
 
