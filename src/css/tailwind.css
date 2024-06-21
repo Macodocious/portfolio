@@ -53,7 +53,7 @@
     }
 
     strong {
-        @apply text-bk-32;
+        @apply text-bk-48;
         font-weight: inherit;
     }
 }
