@@ -12,37 +12,44 @@
 
     h2 {
         @apply text-4xl font-semibold;
-        letter-spacing: calc(-0.0325rem * 2.25);
+        letter-spacing: calc(2.25 * -0.0325rem);
+        line-height: calc(2.25 * 1.3rem);
     }
 
     h3 {
         @apply text-3xl font-medium;
-        letter-spacing: calc(-0.0325rem * 1.875);
+        letter-spacing: calc(1.875 * -0.0325rem);
+        line-height: calc(1.875 * 1.3rem);
     }
 
     h4 {
         @apply text-2xl font-medium;
-        letter-spacing: calc(-0.0325rem * 1.5);
+        letter-spacing: calc(1.5 * -0.0325rem);
+        line-height: calc(1.5 * 1.3rem);
     }
 
     h5 {
         @apply text-xl;
-        letter-spacing: calc(-0.0325rem * 1.25);
+        letter-spacing: calc(1.25 * -0.0325rem);
+        line-height: calc(1.25 * 1.3rem);
     }
 
     h6 {
         @apply text-lg;
-        letter-spacing: calc(-0.0325rem * 1.125);
+        letter-spacing: calc(1.125 * -0.0325rem);
+        line-height: calc(1.125 * 1.3rem);
     }
 
     p {
         @apply text-base;
-        letter-spacing: calc(-0.0325rem * 1);
+        letter-spacing: calc(1 * -0.0325rem);
+        line-height: calc(1 * 1.3rem);
     }
 
     a {
         @apply text-base;
-        letter-spacing: calc(-0.0325rem * 1);
+        letter-spacing: calc(1 * -0.0325rem);
+        line-height: calc(1 * 1.3rem);
     }
 
     strong {
